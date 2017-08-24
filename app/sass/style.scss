@@ -1,0 +1,38 @@
+@import '~jeet/scss/index';
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '~normalize-scss/sass/normalize/import-now';
+@import "~slick-carousel/slick/slick";
+
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome';
+
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-font-family: "slick";
+$slick-loader-path: "~slick-carousel/slick/";
+@import "~slick-carousel/slick/slick-theme";
+
+$hamburger-types: (slider);
+$hamburger-layer-color: #fff;
+@import '~hamburgers/_sass/hamburgers/hamburgers';
+
+$small: 400px;
+$medium: 768px;
+$large: 1024px;
+$xlarge: 1280px;
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  font-size: 16px;
+  overflow-x: hidden;
+  line-height: 1.5;
+  font-weight: 300;
+  &.admin-bar {
+    padding-top: 46px;
+    margin-top: -46px;
+    @include breakpoint(782px) {
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+  }
+}

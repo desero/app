@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Static website boilerplate using webpack and bootstrap">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{% block title %}App{% endblock %}</title>
+	</head>
+	<body {% block body_attributes %}{% endblock %}>
+		{% include './header.html.twig' %}
+		{% block beforebody %}{% endblock %}
+		<main class="container">
+			{% block body %}{% endblock %}
+		</main>
+		{% block afterbody %}{% endblock %}
+		{% include './footer.html.twig' %}
+	</body>
+</html>
